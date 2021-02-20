@@ -113,7 +113,7 @@ namespace SunSistem
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)//недотаймер, Жень помоги
+        private void timer1_Tick(object sender, EventArgs e)//недотаймер
         {
             Drow();
             Planet();
