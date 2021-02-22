@@ -52,6 +52,7 @@ namespace SunSistem
             // 
             this.textBox1.Location = new System.Drawing.Point(12, 175);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(154, 22);
             this.textBox1.TabIndex = 9;
             // 
@@ -87,11 +88,11 @@ namespace SunSistem
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 357);
+            this.button1.Location = new System.Drawing.Point(12, 203);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(154, 134);
             this.button1.TabIndex = 12;
-            this.button1.Text = "Пуск";
+            this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
