@@ -30,7 +30,6 @@ namespace SunSistem
         private void Planet()//рисует планеты, если на них галочка, убирает, если ее нет
         {
             checkedListBox1.CheckOnClick = true;
-            timer1.Enabled = true;
             if (checkedListBox1.GetItemCheckState(0) == CheckState.Checked)
             {
                 Graphics system = pictureBox1.CreateGraphics();
@@ -131,14 +130,16 @@ namespace SunSistem
 
         public void timer1_Tick(object sender, EventArgs e)//недотаймер
         {
-            _t += _dt;
+            _t += 0.01;
         }
 
         private void button1_Click(object sender, EventArgs e)// по нажатию кнопки должно все заработать
         {
+            timer1.Enabled = true;
             Drow();
             Planet();
             ShowRes();
+            timer1.Enabled = false;
         }
     }
 }
